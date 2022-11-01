@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q 1: <p>Write a program to make a simple calculator 
+        using switch statement that takes operator and two numbers 
+        from user and print the result after operation.</p> <br><br>
+    Ans 1: <code>
+        switch(A) { <br>
+            case "+": {<br>
+              return B+C;<br>
+              break;<br>
+            } <br>
+            case "-": { <br>
+              return B-C; <br>
+              break; <br>
+            } <br>
+            case "/": { <br>
+              return B/C <br>
+              break; <br>
+            } <br>
+            case "*": { <br >
+              return B*C; <br>
+              break; <br>
+            } <br>
+          } <br>
+    </code>
+
+    Q 2: <p>Write a program that takes a number and prints whether the number is divisible by 6and 9  or not.</p> <br> <br>
+
+    Ans 2: <code>
+        if((N%6 == 0) && (N%9 == 0)) { <br>
+            return "Divisible by both"; <br>
+          }<br>
+      
+          else{<br>
+            return "Not Divisible by both";<br>
+          } <br>
+    </code>
+
+    Q 3: <p>You are given an integer A
+        , denoting the age of a person, and your task is
+         to determine whether he/she is eligible to vote or not.</p> <br><br>
+
+    Ans 3:   <code> if(a<18) { <br>
+    return "Not Eligible for Voting"; <br>
+  }  <br>
+  
+  else{<br>
+    return "Eligible for Voting"; <br>
+  }  <br>
+
+</code>
+ 
+Q 4: <p> PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values 
+X
+ and 
+Y
+ and asks you to find the relation between them.
+The relationships between integers 
+X
+ and 
+Y
+</p> <br><br>
+
+   Ans 4: <code>
+        if(x < y) { <br>
+            return x + " is smaller than " + y; <br>
+          } <br>
+          
+          if(x > y) { <br>
+            return x + " is greater than " + y; <br>
+          } <br>
+          
+          if(x == y) { <br>
+            return x + " is equal to " + y; <br>
+          } <br>
+    </code>
+
+    Q5 : <p>Your school has the following grading system based upon the marks(M) obtained by a student:</p>
+   Ans 5: <code>
+        if(a <= 10) { <br>
+            return "E"; <br>
+          } <br>
+          
+          else if ((a >= 11) && (a <= 20)) {  <br>
+            return "D";  <br>
+          } <br>
+          
+          else if ((a >= 21) && (a <= 30)) { <br>
+            return "C"; <br>
+          } <br>
+          
+          else if ((a >= 31) && (a <= 40)) { <br>
+            return "B"; <br>
+          } <br>
+          
+          else if ((a >= 41) && (a <= 50)) { <br>
+            return "A"; <br>
+          } <br>
+    </code>
+    Q6 : <p>You are provided with a table containing some characters and their 
+        corresponding values. Your task will be to find the value from the table 
+        corresponding to an input character and return it</p>
+    Ans 6: <code>
+        switch(a) { <br>
+            case "P" : { <br>
+              return "PrepBytes"; <br>
+            } <br>
+            
+            case "p" : { <br>
+              return "PrepBytes"; <br>
+            } <br>
+            
+            case "Z" : { <br>
+              return "Zenith"; <br>
+            } <br>
+            
+            case "z" : { <br>
+              return "Zenith"; <br>
+            } <br>
+            
+            case "E" : { <br>
+              return "Expert Coder"; <br>
+            } <br>
+            case "e" : { <br>
+              return "Expert oder"; <br>
+            } <br>
+            
+            case "D" : { <br>
+              return "Data Structure"; <br>
+            } <br>
+             
+            case "d" : { <br>
+              return "Data Structure"; <br>
+            } <br>
+            
+          }
+    </code>
+
+    Q 7: <p>Take three numbers and print the largest number among them if all of three are same print  1.</p>
+    Ans 7: <code>
+        if(A>B && B>C) { <br>
+            return A; <br>
+          } <br>
+          
+          if(A>C && C>B) { <br>
+            return A; <br>
+          } <br>
+           
+          if(B>A && A>C) { <br>
+            return B; <br>
+          } <br>
+          
+          if(B>C && C>A) { <br>
+            return B; <br>
+          } <br>
+            
+          if(C>A && A>B) { <br>
+            return C; <br>
+          } <br>
+          
+          if(C>B && B>A) { <br>
+            return C; <br>
+          } <br>
+          
+          if(A==B && B==C) { <br>
+            return -1; <br>
+          }
+    </code>
+    Q 8 : <p>You are given 3 distinct integers X,Y, and Z,
+         and your task is to find and return the second smallest integer among the three provided integers.</p> <br><br>
+    Ans 8: <code>
+        if(x>y && y>z) { <br>
+            return y; <br>
+          } <br>
+          
+          if(x>z && z>y) { <br>
+            return z; <br>
+          } <br>
+          
+          if(y>x && x>z) { <br>
+            return x; <br>
+          } <br>
+          
+          if(y>z && z>x) { <br>
+            return z; <br>
+          } <br>
+            
+          if(z>x && x>y) { <br>
+            return x; <br>
+          } <br>
+          
+          if(z>y && y>x) { <br>
+            return y;
+            <br>
+          }
+    </code><br><br>
+Q 9: <p>Write a program takes takes three angles and checks whether the triangle is acute or obtuse.</p>
+Ans 9: <code> if (A>90 || B>90 || C>90) { <br>
+    return "obtuse"; <br>
+  } <br>
+  
+  else { <br>
+    return "acute"; <br>
+  }</code>
+
+
+</body>
+</html>
