@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q1 : <p>Take a number from the user and print the count of digits in that number.</p>
+
+    Ans: <code> let a = N; <br>
+        let b = 1;<br>
+        for(let i=0; i<=5;i++){<br>
+          a =a/10;<br>
+          if(a>=1){<br>
+            b++;<br>
+          }<br>
+        }<br>
+        return b;</code><br>
+
+    Q2 : <p>Among all the digits from 0−9,
+             PrepBuddy likes number 5. He has a number and wants
+              you to find out the number of times 5 occurred in the given number.</p>
+
+        Ans: <code>
+             let x=0;<br>
+	 while(N !=0){<br>
+	   if(N%10==5)<br>
+	   x=x+1;mm <br>
+	   N=parseInt(N/10);<br>
+	 }<br>
+	 return x;<br>
+        </code>
+
+    Q 3: <p>
+            You are given an integer N, and your task is to find the sum of all the even integers starting from 
+ 1
+             upto 
+            N
+             (
+            N
+             inclusive)
+        </p>
+        Ans : <code>let sum=0; <br>
+            for(let x=2 ;x<=n; x=x+2) <br>
+            { <br>
+              sum=sum+x; <br>
+            } <br>
+            return sum; <br></code>
+
+        Q 4: <p>Write a program that takes a number from the user and get the sum of the digits present in the number.</p>
+        
+        Ans : <code>
+            let sum=0,x; <br>
+	while(N>0) <br>
+	{ <br>
+	  x =N%10 <br>
+	  sum =sum+x <br>
+	  N=parseInt(N/10) <br>
+	} <br>
+	return sum; <br>
+            </code>  
+            
+         Q 5: <p>Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.</p> 
+         
+         Ans: <code>
+            let x=0; <br>
+	 for(x=2;x<=N;x++) <br>
+	 if(x==2|| x%2!==0) <br>
+	 console.log(x) <br>
+         </code>
+          
+         Q 6: <p>Write a program which ask user for no of lines and print a pattern using an asterik .</p>
+
+        Ans : <code>
+            let x= ""; <br>
+  for(y=1; y<=N;y++){ <br>
+    x += "*"; <br>
+    console.log(x); <br>
+  }
+         </code>
+
+         Q 7: <p>Write a program which takes  a number from user and check whether number is prime number or not a prime number.</p>
+
+         Ans : <code>
+            let num =0; <br>
+	 for(let x=1; x<=N; x++ ){ <br>
+	   if(N%x ===0) <br>
+	   num++; <br>
+	 } <br>
+	 if(num ==2) <br>
+    return "YES" <br>
+   else <br>
+    return "NO" <br>
+         </code>
+   Q 8 : <p>You are given an integer 
+    N
+    , and your task is to print all the integers starting from 
+    1
+     till 
+    N
+     (
+    N
+     inclusive).</p>
+         Ans: <code>for( let x = 1; x <= n; x++){ <br>
+            console.log(x); <br>
+          }  <br> </code>
+
+  Q 9 : <p>Write a program which takes a number from user and print the table.</p>
+          Ans : <code>for(let x=1; x<=10; x++){ <br>
+            console.log(N +" " +"*"+" " + x +" " +"="+" " + N*x); <br>
+          } <br></code>
+    
+</body>
+</html>
