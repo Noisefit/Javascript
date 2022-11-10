@@ -1,0 +1,281 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q1 : <p>You are given a string 
+        S
+        , and your task is to return an array 
+        B
+         
+        (
+        having a size of 
+        2
+        )
+        , where 
+        B
+        [
+        0
+        ]
+         contains the count of character A (uppercase) in string S and 
+        B
+        [
+        1
+        ]
+         contains the count of character D (uppercase) in string S.</p>
+
+    Ans : <code>let countOfA = 0; <br>
+        let countOfD = 0;<br>
+        for (let character of S) {<br>
+            if (character === "A") {<br>
+                countOfA++;<br>
+            } else if (character === "D") {<br>
+                countOfD++;<br>
+            }<br>
+        }<br>
+        let B = [countOfA, countOfD];<br>
+        return B;<br>
+    };</code>
+
+Q 2 : <p>Tina is given a string  S which contains the first letter of all the student names
+     in her class. She got a curiosity to check how many people have their names starting from the same alphabet. So given
+     a string  S , she decided to write a code that finds out the count of characters that occur more than once in the string.</p>
+Ans : <code> let newString = "";<br>
+    let letters = "abcdefghijklmnopqrstuvwxyz";<br>
+    let count = 0;<br>
+    for (let letter of letters) {<br>
+      for (let character of s) {<br>
+        if (letter === character) {<br>
+          count++;<br>
+        }<br>
+      }<br>
+      if (count > 1) {<br>
+        newString += `${letter}${count}`;<br>
+      }<br>
+      count = 0;<br>
+    }<br><br>
+    return newString;<br>
+  };<br>
+  </code>
+
+  Q 3 : <p>You are given a string 
+    S
+     containing both uppercase and lowercase letters. You need to find out the number of vowels in the given string.</p>
+Ans : <code>S = S.toLowerCase();<br>
+    let vowels = "aeiou";<br>
+    let count = 0;<br>
+    for (let letter of S) {<br>
+      for (let vowel of vowels) {<br>
+        if (vowel === letter) {<br>
+          count++;<br>
+        }<br>
+      }<br>
+    }<br>
+    return count;<br>
+  };<br>
+  
+  var Count_Consonants = (S) => {<br>
+    S = S.toLowerCase();<br>
+    let vowels = "aeiou";<br>
+    let count = 0;<br>
+    for (let letter of S) {<br>
+      if (<br>
+        letter !== "a" &&<br>
+        letter !== "e" &&<br>
+        letter !== "i" &&<br>
+        letter !== "o" &&<br>
+        letter !== "u"<br>
+      ) {<br>
+        count++;<br>
+      }<br>
+    }<br>
+    return count;<br>
+  };<br>
+  
+  console.log(Count_Consonants("Prepbytes"));</code>
+
+  Q 4 : <p>You are given two strings 
+    S
+    1
+     and 
+    S
+    2
+     (containing both uppercase and lowercase letters), You need to retrun a string which is the concatenation of both the given strings. 
+    
+    Note: You have to complete Concatenate_Strings function. No need to take any input.</p>
+Ans <Code> return S1.concat(S2);<br>
+};</Code><br>
+
+Q 5 : <p>You are given a string 
+    S
+    , and your task is to return the length of the string 
+    S
+    .
+    
+    Note: You have to solve it without using length method. You have to complete findLength function. No need to take any input.</p>
+Ans : <code>
+    let count = 0; <br>
+    for (let letter of S) {<br>
+      count++;<br>
+    }<br>
+    return count; </code>
+
+Q 6 : <p>You are given a string 
+    S
+    , and your task is to return the length of the string 
+    S
+    .
+    
+    Note: You have to solve it without using length method. You have to complete findLength function. No need to take any input.</p>
+Ans : <code>  let count = 0;<br>
+    for (let letter of S) {<br>
+      count++;<br>
+    }<br>
+    return count;</code>
+
+    Q 7: <p>You are given a string 
+        S
+         consisting of two letters 
+        A
+         and 
+        D
+        ,where each character represent the winner of N games played between Aditya and Danish, where letter 
+        A
+         represents the win of Aditya and letter 
+        D
+         represents the win of Danish. 
+        You need to find out the that which player wins the maximum number of games or there is a draw between them.</p>
+     Ans : <code>let countOfA = 0;<br>
+        let countOfD = 0;<br>
+        for (let letter of S) {<br>
+          if (letter === "A") {<br>
+            countOfA++;<br>
+          } else {<br>
+            countOfD++;<br>
+          }<br>
+        }<br>
+      
+        if (countOfA > countOfD) {<br>
+          return "Aditya";<br>
+        } else if (countOfA < countOfD) {<br>
+          return "Danish";<br>
+        } else {<br>
+          return "Draw";<br>
+        }</code>
+
+        Q 7: <p>You are given two strings 
+            S
+             and 
+            P
+            , and your task is to concatenate them and return the concatenated string</p>
+
+        Ans : <code>return S.concat(P);</code>
+
+        Q 8: <p>You are given a string 
+            S
+            , Your task is to check wether the given string is a 
+            P
+            a
+            l
+            i
+            n
+            d
+            r
+            o
+            m
+            e
+             or not.
+            
+            A 
+            P
+            a
+            l
+            i
+            n
+            d
+            r
+            o
+            m
+            e
+             is a string, which turnout same when read in reverse direction.
+            Example: "naman" is a Palindrome.
+            String can contain both upppercase lowercase letters.</p>
+
+        Ans : <code>let reversedString = "";<br>
+            for (let i = str.length-1; i >= 0; i--) {<br>
+              reversedString += str[i];<br>
+            }<br>
+          
+            if (str === reversedString) {<br>
+              return "True";<br>
+            } else {<br>
+              return "False";<br>
+            }</code>
+
+            Q 9 : <p>You are given a string 
+                S
+                , Your task is to Reverse the string.
+                String can contain both upppercase lowercase letters. </p>
+
+            Ans : <code>let reverseString = "";<br>
+                let length = str.length;<br>
+              
+                while (length > 0) {<br>
+                  reverseString += str[length - 1];<br>
+                  length--;<br>
+                }v
+              
+                return reverseString;</code>
+
+                Q 10 : <p>You are given two strings 
+                    S
+                    1
+                     and 
+                    S
+                    2
+                    , Your task is to print 
+                    Y
+                    E
+                    S
+                     if both strings are same else print 
+                    N
+                    O
+                    .</p>
+
+                Ans : <code> return S1 === S2 ? "YES" : "NO";</code>
+
+  Q 11: <p>You are given a string 
+    S
+    , along with a pattern string and a text string. 
+    You need to repalce the pattern string in 
+    S
+     to the text string.</p>
+
+  Ans : <code>return S.replace(pattern, text);</code>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

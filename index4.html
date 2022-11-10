@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q1:  <p> Write a program that takes an array as input from the user and find out the product of the elements.</p>
+
+    Ans: <code>
+        let product = 1; <br>
+        for(let i = 0; i< array.length; i++) { <br>
+           product *= array[i]; <br>
+         }<br>
+         
+         return product;<br>
+        </code>
+
+        Q2 : <p>Write a program which takes an array as input from the user and find out the sum of the array elements</p>
+        Ans : <code>
+            let product = 0;<br>
+         for(let i = 0; i< array.length; i++) {<br>
+        product += array[i];<br>
+       }<br>
+     
+         return product;<br>
+        </code>
+
+        Q 3: <p>You are given an array 
+            A
+             containing 
+            N
+             integer elements and an integer 
+            K
+            , and your task is to return the count of occurrences of 
+            K
+             in array 
+            A
+            .</p>
+            Ans : <code> let count = 0;<br>
+                for(let i = 0; i < N; i++) {<br>
+                  if(Arr[i] == K) {<br>
+                    count++;<br>
+                  }<br>
+                }</code>
+
+                Q4 : <p>You are given an array 
+                  A
+                   containing 
+                  N
+                   integer elements, and your task is to return an array 
+                  B
+                   
+                  (
+                  having a size equal to 
+                  2
+                  )
+                  , where 
+                  B
+                  [
+                  0
+                  ]
+                   contains the sum of all even elements of array A and 
+                  B
+                  [
+                  1
+                  ]
+                   has the sum of all odd elements of the array 
+                  A</p>
+
+
+                  Ans : <code>let count1 = 0, count2 = 0;<br>
+                    let B = [];<br>
+                    for(let i = 0; i<N; i++) { <br>
+                      if(Arr[i]%2 == 0) {<br>
+                        count1 += Arr[i];<br>
+                      }<br>
+                       else{<br>
+                        count2 += Arr[i];<br>
+                      }<br>
+                    }<br>
+                     console.log(arr[0] + " " + arr[1]);<br>
+                     <br>
+                    B[0] = count1;<br>
+                    B[1] = count2;<br>
+                    return B; </code>
+
+                    Q 5 <p>Write a program which takes an array as input from the user and a number.
+                      Check whether the number is present or not.</p>
+
+                      Ans : <code>let product = 0;<br>
+                        for(let i = 0; i< array.length; i++) {<br>
+                           product += array[i];<br>
+                         }<br>
+                         
+                         return product;</code>
+
+                         
+                         Q6 : <p>
+                          You are given an array 
+                          A
+                           containing the maths marks of students in your class, and your task is to determine if all the students pass in your class or not. A student is declared pass if his maths marks are greater than or equal to 
+                          32
+                          .
+                          
+                          If all the students pass in your class, return "YES" (without quotes); otherwise, return "NO" (without quotes).
+                         </p>
+
+                         Ans : <code>for(let i = 0; i < N; i++) {<br>
+                          if(Arr[i] < 32) {<br>
+                            return "NO"<br>
+                          }<br>
+                        }<br>
+                        
+                        return "YES";</code>
+
+                        Q 7: <p>You are provided an array of integers and you have to increment all array elements by 1 and then print whole array.
+
+                          You have to complete Inc_Arr. No need to take any input.</p>
+
+                        Ans : <code>let arr = "";<br>
+                          for(let i = 0; i < N; i++) {<br>
+                            arr += (array[i] + 1) + " ";<br>
+                          }<br>
+                          
+                          console.log(arr)</code>
+
+                          Q 8: <p>You are given an array 
+                            A
+                             containing the age of persons in your locality, and your task is to find and return an array containing the age of persons that are over 
+                            18
+                             
+                            (
+                            18
+                             included
+                            )
+                            .</p>
+
+                          Ans : <code>const arr = [];<br>
+                            for(let i = 0; i < N; i++) {<br>
+                              if(Arr[i] >= 18) {<br>
+                                arr.push(Arr[i]);<br>
+                              }<br>
+                            }<br>
+                            return arr;</code>
+
+                            Q 9 : <p>Prepbuddy is very tasteful of clothes. 
+                              He has 
+                              N
+                               numbers of shirts hanging in the hanger in his wardrobe.
+                              Prepbuddy likes to wear different colored clothes. So, whenever he see there are two or more shirts with the same color, he removes all the shirt of that color from his wardrobe. Now, he wants to know how many 
+                              M
+                               unique color shirts are left in the wardrobe. 
+                              Prepbuddy wants you to find 
+                              M
+                              .</p>
+
+                            Ans : <code>let a = arr, count = 0, repeat = 0;<br>
+                              let first = true;<br>
+                              a.sort();<br>
+                              
+                              for(let i = 1; i < N; i++) {<br>
+                                if(a[i] === a[i - 1]) {<br><br>
+                                  count++;<br>
+                                  if(first) {<br>
+                                    count++;<br>
+                                    first = false;v
+                                  }<br>
+                                }<br>
+                                
+                                else{<br>
+                                    first = true;<br>
+                                  }<br>
+                                
+                              }<br>
+                                return arr.length - count;</code>
+
+                            Q 10 : <p>Congratulations on making up to this question. Let us give you a fairly simple array problem to solve. If you know how to iterate through the array, you will easily be able to solve this.
+                              The problem statement is simple- given 
+                              N
+                               elements, find the minimum and maximum numbers among those elements.</p>     
+
+                            Ans : <code>function arrayMin(arr) {<br>
+
+    
+                              return Math.min(...arr);<br>
+                              <br>
+                            
+                            }<br>
+                            
+                            function arrayMax(arr) {<br>
+                            
+                              
+                              return Math.max(...arr);<br>
+                            
+                            }</code>
+
+                            Q 11: <p>Yatharth and Anamika are playing a game. Anamika loves Yatharth very much and she wants to share a chocolate bar with him in which each of the squares consists of an integer represented by 
+                              A
+                              [
+                              i
+                              ]
+                              . 
+                              
+                              She decides to share a contiguous segment of the chocolate bar selected such that the length of the segment matches Yatharth's birth month 
+                              M
+                               and the sum of the integers on the squares is equal to his birthday 
+                              D
+                              . 
+                              
+                              You must determine how many ways she can divide the chocolate.</p>
+
+                            Ans : <code>let count = 0;<br>
+    
+                              if (M > arr.length) {<br>
+                                return 0;<br>
+                              }<br>
+                              for(let i = M-1; i < arr.length; i++) {<br>
+                                let sum = 0<br>
+                                for(let j = i; j >= i-M+1; j--) {<br>
+                                  sum += arr[j]<br>
+                                }<br>
+                                if(sum === D) {<br>
+                                  count++;<br>
+                                }<br>
+                              }<br>
+                               return count;</code>
+
+                               Q12 : <p>You are given an array 
+                                A
+                                 containing 
+                                N
+                                 integer elements and an integer 
+                                K
+                                , and your task is to return the count of occurrences of 
+                                K
+                                 in array 
+                                A
+                                .</p>
+
+                               Ans : <code>const findCount = (N, K, Arr) => <br>
+                                {<br>
+                                    let count = 0;<br>
+                                    for(let i = 0; i < N; i++) {<br>
+                                      if(Arr[i] == K) {<br>
+                                        count++;<br>
+                                      }<br>
+                                    }<br>
+                                    <br>
+                                    return count;<br>
+                                };</code><br>
+</body>
+</html>
