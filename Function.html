@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q1: <p>Create one function with zero parameter having a console statement;</p>
+    Ans : <code>const greet = () => { <br>
+        console.log("Hello");<br>
+      };<br><br>
+      
+      greet();</code>
+
+      Q2 : <p>Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</p>
+
+      Ans : <code>const sum = (x, y) => {<br>
+        console.log(`Sum of ${x}, ${y} is ${x + y}`);<br>
+      };<br><br>
+      
+      sum(3, 4);</code>
+
+      Q3: <p>Create one arrow function</p>
+      Ans : <code>const arrowFunction = () => {<br>
+        console.log("This is an Arrow Function");<br>
+      };<br>
+      
+      arrowFunction();</code><br>
+
+      Q4 : <p>"Print output: 
+        var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();"</p>
+
+        Ans : <code>var x = 21;<br>
+            var girl = function () {<br>
+              console.log(x);<br>
+              var x = 20;<br><br>
+            };<br>
+            girl();<br></code><br>
+
+            Q5 : <p>"Print output: 
+                var x = 21;
+                girl ();
+                console.log(x)
+                function girl() {
+                    console.log(x);
+                    var x = 20;
+                };
+                "</p>
+                Ans : <code>var x = 21;<br>
+                    girl();<br>
+                    console.log(x);<br>
+                    function girl() {<br>
+                      console.log(x);<br>
+                      var x = 20;<br>
+                    }<br></code><br>
+
+                    Q6 : <p>"Print output
+
+                        var x = 21;
+                        a();
+                        b();
+                        
+                          function a() {
+                            
+                           x = 20;
+                          console.log(x);
+                        };
+                         function b() {
+                            
+                            x = 40;
+                           console.log(x);
+                        };"</p>
+
+                        Ans : <code>var x = 21;<br>
+                            a();<br>
+                            b();<br>
+                            console.log(a);<br>
+                            a = function () {<br><br>
+                              x = 20;<br>
+                              console.log(x);<br>
+                            };<br>
+                            b = function () {<br>
+                              x = 40;<br>
+                              console.log(x);<br>
+                            };
+                            </code><br>
+                            <br>
+                            Q7 : <P>Write a function that accepts parameter n and returns factorial of n</P>
+
+                            Ans : <code>const factorial = (n) => {<br>
+                                let result = 1;<br>
+                                for (let i = 1; i <= n; i++) {<br>
+                                  result *= i;<br>
+                                }<br>
+                              
+                                return result;<br>
+                              };
+                              <br>
+                              console.log(factorial(5));</code>
+</body>
+</html>
